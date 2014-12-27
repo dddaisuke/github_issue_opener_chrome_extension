@@ -1,14 +1,33 @@
 {
-  "name": "Github issue opener",
-  "version": "1",
-  
+  "name": "GitHub Issue Opener",
+  "author": "Daisuke Yamashita (@dddaisuke)",
+  "description": "This is a Chrome extension for jump to issue on GitHub.",
+  "icons": {
+    "16": "images/16x16.png",
+    "48": "images/48x48.png",
+    "128": "images/128x128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/32x32.png",
+    "default_popup": "github_issue_opener.html"
+  },
+  "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "*://github.com/"
+  ],
+  "version": "1.0.1",
   "manifest_version": 2,
-  
-  "icons": {"128": "dart_icon.png"},
-  
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
+  "offline_enabled": false,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+I",
+        "mac": "Command+I",
+        "chromeos": "Alt+I",
+        "linux": "Alt+I"
+      }
     }
   }
 }

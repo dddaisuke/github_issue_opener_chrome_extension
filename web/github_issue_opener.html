@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="github_issue_opener.css">
   </head>
   <body>
-    <h1>Github issue opener</h1>
-
-    <p>Hello world from Dart!</p>
-
-    <div id='container_id'>
-      <p id='text_id'>Click me!</p>
-    </div>
-
+    <form class="id-search">
+      <select id="project-name" name="project-name">
+        <option value="sandbox">sandbox</option>
+        <option value="mana.bo_android">android</option>
+        <option value="whiteboard">whiteboard</option>
+        <option value="whiteboard-spec">whiteboard-spec</option>
+        <option value="manabo">manabo</option>
+        <option value="api">api</option>
+        <option value="mana.bo_iOS">iOS</option>
+        <option value="ios_for_tutor">ios_for_tutor</option>
+        <option value="static.mana.bo">static.mana.bo</option>
+        <option value="session-compiler">session-compiler</option>
+      </select>
+      <input type="text" id="issue-id" placeholder="&gt;&#95; GitHub issue id">
+    </form>
+<!--
     <script src="packages/chrome/bootstrap.js" defer></script>
-
-    <script src="github_issue_opener.dart" type="application/dart"></script>    
+-->
+    <script src="github_issue_opener.dart" type="application/dart"></script>
   </body>
 </html>
