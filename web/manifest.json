@@ -17,7 +17,7 @@
     "webNavigation",
     "*://github.com/"
   ],
-  "version": "1.0.1",
+  "version": "2.0.2",
   "manifest_version": 2,
   "offline_enabled": false,
   "commands": {
