@@ -29,5 +29,11 @@
         "linux": "Alt+I"
       }
     }
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/manabo-inc/sandbox/issues/new"],
+      "js": ["github_issue_override.dart.js"]
+    }
+  ]
 }
