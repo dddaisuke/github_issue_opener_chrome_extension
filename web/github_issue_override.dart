@@ -68,11 +68,11 @@ void bbb() {
   DivElement labelTutor = generateLabel("Tutor");
   DivElement labelStudentManabo = generateLabel("Student(mana.bo)");
   DivElement labelStudentRiakate = generateLabel("Student(Riakate)");
-  DivElement labelNewB2C = generateLabel("New BtoC");
+  DivElement labelScheduled = generateLabel("Scheduled");
   service.append(labelTutor);
   service.append(labelStudentManabo);
   service.append(labelStudentRiakate);
-  service.append(labelNewB2C);
+  service.append(labelScheduled);
   service.classes.add("form-checkbox");
   service.setAttribute("style", "margin-bottom: 10px");
   newIssue.append(service);
